@@ -114,25 +114,40 @@ function generateMarkdown(data) {
   console.log(data)
   
 
-  if (data.portfolio !== "" || data.portfolio !== undefined) {
-      data.portfolio = `- [Portfolio](${data.portfolio})`}
+  if (data.portfolio !== "" ) {
+    data.portfolio = `- [Portfolio](${data.portfolio})`}
 // lmao this is kinda janky
-  if (data.linkedIn !== "" || data.linkedIn !== undefined) {
-      data.linkedIn = `- [LinkedIn](${data.linkedIn})`}
+  if (data.linkedIn !== "" ) {
+    data.linkedIn = `- [LinkedIn](${data.linkedIn})`}
 
-  if (data.gitlink !== "" || data.gitlink !== undefined) {
-      data.gitlink = `- [GitHub Link](${data.gitlink})`}
+  if (data.gitlink !== "" ) {
+    data.gitlink = `- [GitHub Link](${data.gitlink})`}
 
-  if (data.install !== "" || data.install !== undefined) {
-      data.install = `
+  if (data.contributing !== "" ) {
+    data.contributing = `
+### Contributors
+
+${data.contributing}`}
+
+  if (data.tests !== "" ) {
+    data.tests = `
+### Tests
+
+(${data.tests})`}
+  
+  if (data.install !== "" ) {
+    data.install = `
 * [Installation Instructions](#installation-instructions)
       
 ## Installation Instructions
       
 ${data.install}`}
   
-  if (data.usage !== "" || data.usage !== undefined) {
-      data.usge = `- [GitHub Link](${data.usage})`}
+  if (data.usage !== "" ) {
+    data.usge = `
+### Usage
+
+${data.usage}`}
 
 
 
@@ -146,8 +161,9 @@ ${data.install}`}
 
   ${data.description}
 
+  ${data.usage}
 
-* [Author & Contact](#author-&-contact)
+* [Author](#author)
 * [License](#license)
   ${data.install}
 
@@ -160,7 +176,10 @@ ${data.install}`}
   ${data.portfolio}
   ${data.linkedIn}
 
+  
+  ${data.contributing}
 
+  ${data.tests}
 ## License
   [${renderLicenseBadge(data)}]${renderLicenseLink(data)}
   \n${renderLicenseSection(data)}

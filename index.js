@@ -33,24 +33,36 @@ const questions = [
         name: "year"
     },
     {
-        message: "What is the description of this project? \n \n (Explain what your application does, justify technologies used, maybe talk about some challenged faced and features you hope to implement in the future",
+        message: "What is the description of this project? \n \n (Explain what your application does, justify technologies used, maybe talk about some challenged faced and features you hope to implement in the future.)\n     ",
         name: "description"
     },
     {
-        message: "Would you like to include installation instructions? \n \n If, so: Type them in. \n Otherwise, keep it empty.",
+        message: "Would you like to include installation instructions? \n \n If so: Type them in. \n Otherwise, keep it empty.",
         name: "install"        
     },
     {
-        message: "Would you like to include your portfolio? (So people can find you easier.) \n \n If, so: What is the link to your portoflio? \n Otherwise, keep it empty.",
+        message: "Would you like to include usage instructions? \n \n If so: Type them in. \n Otherwise, keep it empty.",
+        name: "usage"        
+    },
+    {
+        message: "Would you like to include your portfolio? (So people can find you easier.) \n \n If so: What is the link to your portoflio? \n Otherwise, keep it empty.",
         name: "portfolio"
     },
     {
-        message: "Would You like to include your LinkedIn? \n \n If, so: What is the link to your LinkedIn? \n Otherwise, keep it empty.",
+        message: "Would You like to include your LinkedIn? \n \n If so: What is the link to your LinkedIn? \n Otherwise, keep it empty.",
         name: "linkedIn"
     },
     {
-        message: "Would You like to include your GitHub? \n \n If, so: What is the link to your GitHub? \n Otherwise, keep it empty.",
+        message: "Would You like to include your GitHub? \n \n If so: What is the link to your GitHub? \n Otherwise, keep it empty.",
         name: "gitlink"
+    },
+    {
+        message: "Who contributed? \n \n If nobody contributed keep it empty.",
+        name: "contributing"
+    },
+    {
+        message: "Would You like to include tests? \n \n If not: keep it empty.",
+        name: "tests"
     },
     {
         type: "list",

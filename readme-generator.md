@@ -30,6 +30,7 @@ If it's unavailable here, you can find it within the video folder located in thi
 There is background static in the video when I talk. I'm still conprehensible, and it's not too loud, but it may be bothersome for some.
 
 ![Watch the video](./video/install.mp4)
+[Or View it here, on Google Drive.](https://drive.google.com/file/d/1L5oKg9MQtg3Awjn-iId4204XQPbn23kj/view?usp=sharing/)
 
 
 ## Author 

@@ -127,13 +127,13 @@ function generateMarkdown(data) {
     data.contributing = `
 ### Contributors
 
-${data.contributing}`}
+${data.contributing}\n`}
 
   if (data.tests !== "" ) {
     data.tests = `
 ### Tests
 
-(${data.tests})`}
+${data.tests}\n`}
   
   if (data.install !== "" ) {
     data.install = `
@@ -141,13 +141,13 @@ ${data.contributing}`}
       
 ## Installation Instructions
       
-${data.install}`}
+${data.install}\n`}
   
   if (data.usage !== "" ) {
     data.usge = `
 ### Usage
 
-${data.usage}`}
+${data.usage}\n`}
 
 
 

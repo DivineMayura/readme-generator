@@ -5,14 +5,14 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // license choices.
 var choices = ["Apache 2.0",
-"BSD 3-Clause License",
-"Attribution CC BY",
-"Attribution-ShareAlike CC BY-SA",
-"Attribution-NoDerivs CC BY-ND",
-"Attribution-NonCommercial CC BY-NC",
-"Attribution-NonCommercial-ShareAlike CC BY-NC-SA",
-"The MIT License",
-"No License"];
+    "BSD 3-Clause License",
+    "Attribution CC BY",
+    "Attribution-ShareAlike CC BY-SA",
+    "Attribution-NoDerivs CC BY-ND",
+    "Attribution-NonCommercial CC BY-NC",
+    "Attribution-NonCommercial-ShareAlike CC BY-NC-SA",
+    "The MIT License",
+    "No License"];
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -38,11 +38,11 @@ const questions = [
     },
     {
         message: "Would you like to include installation instructions? \n \n If so: Type them in. \n Otherwise, keep it empty.\n     ",
-        name: "install"        
+        name: "install"
     },
     {
         message: "Would you like to include usage instructions? \n \n If so: Type them in. \n Otherwise, keep it empty.\n     ",
-        name: "usage"        
+        name: "usage"
     },
     {
         message: "Would you like to include your portfolio? (So people can find you easier.) \n \n If so: What is the link to your portoflio? \n Otherwise, keep it empty.\n     ",
@@ -67,7 +67,7 @@ const questions = [
     {
         type: "list",
         message: "What License would you like to use for this?\n",
-        choices: choices, 
+        choices: choices,
         name: "license"
     }
 ];
@@ -76,7 +76,7 @@ const questions = [
 
 // 
 function init() {
-    
+
     inquirer
         .prompt(questions)
         .then(data => {

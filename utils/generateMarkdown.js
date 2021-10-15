@@ -116,7 +116,7 @@ function generateMarkdown(data) {
 
   if (data.portfolio !== "" || data.portfolio !== undefined) {
       data.portfolio = `- [Portfolio](${data.portfolio})`}
-
+// lmao this is kinda janky
   if (data.linkedIn !== "" || data.linkedIn !== undefined) {
       data.linkedIn = `- [LinkedIn](${data.linkedIn})`}
 
@@ -124,9 +124,12 @@ function generateMarkdown(data) {
       data.gitlink = `- [GitHub Link](${data.gitlink})`}
 
   if (data.install !== "" || data.install !== undefined) {
-      data.install = `## Installation Instructions
+      data.install = `
+* [Installation Instructions](#installation-instructions)
       
-  (${data.install})`}
+## Installation Instructions
+      
+${data.install}`}
   
   if (data.usage !== "" || data.usage !== undefined) {
       data.usge = `- [GitHub Link](${data.usage})`}
@@ -143,13 +146,13 @@ function generateMarkdown(data) {
 
   ${data.description}
 
-* [Built With](#Built-With)
-* [Author & Contact](#Author)
-* [License](#License)
 
+* [Author & Contact](#author-&-contact)
+* [License](#license)
+  ${data.install}
 
 ## Author 
-  ${data.gitHubUserName}
+  GitHub username: ${data.gitHubUserName}
   \n
   ${data.ownerName}
 \n

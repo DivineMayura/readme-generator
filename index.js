@@ -33,24 +33,24 @@ const questions = [
         name: "year"
     },
     {
-        message: "What is the description of this project? (Explain what your application does, justify technologies used, maybe talk about some challenged faced and features you hope to implement in the future",
+        message: "What is the description of this project? \n \n (Explain what your application does, justify technologies used, maybe talk about some challenged faced and features you hope to implement in the future",
         name: "description"
     },
     {
-        message: "Would You like to include Installation Instructions? \n If, so: Type Them. \n Otherwise, keep it empty.",
-        name: "install"
+        message: "Would you like to include installation instructions? \n \n If, so: Type them in. \n Otherwise, keep it empty.",
+        name: "install"        
     },
     {
-        message: "Would you like to include installation instructions? \n If, so: Type them in. \n Otherwise, keep it empty.",
-        name: "description"        
-    },
-    {
-        message: "Would you like to include your portfolio? (So people can find you easier.) \n If, so: What is the link to your portoflio? \n Otherwise, keep it empty.",
+        message: "Would you like to include your portfolio? (So people can find you easier.) \n \n If, so: What is the link to your portoflio? \n Otherwise, keep it empty.",
         name: "portfolio"
     },
     {
-        message: "Would You like to include your LinkedIn? \n If, so: What is the link to your LinkedIn? \n Otherwise, keep it empty.",
+        message: "Would You like to include your LinkedIn? \n \n If, so: What is the link to your LinkedIn? \n Otherwise, keep it empty.",
         name: "linkedIn"
+    },
+    {
+        message: "Would You like to include your GitHub? \n \n If, so: What is the link to your GitHub? \n Otherwise, keep it empty.",
+        name: "gitlink"
     },
     {
         type: "list",

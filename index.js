@@ -22,7 +22,7 @@ const questions = [
     },
     {
         message: "What is your real name? (Case Sensitive.)",
-        name: "ownername"
+        name: "ownerName"
     },
     {
         message: "What is the title of the project?",
@@ -58,21 +58,26 @@ const questions = [
 
 
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-// }
 
-// TODO: Create a function to initialize app
 function init() {
     
     inquirer
         .prompt(questions)
         .then(data => {
-            console.log(data.title)
-            fs.writeFile(`${data.title}.md`, generateMarkdown(data), err => console.error(err, "it errored."))
-    
+            console.log(data)
+            fs.writeFile(`${data.title}.md`, generateMarkdown(data), (err) => err ? console.error(err, "If this message is being played, it errored.") : console.log("Yoooo lets gooooo"))
         })
+        .catch(err => console.log(err))
 }
+
+
+
+
+
+
+
+
+
 
 // Function call to initialize app
 init();

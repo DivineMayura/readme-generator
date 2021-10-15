@@ -1,17 +1,4 @@
-// const fs = require("fs");
-// var info =
-// console.log(fs.readFile("././index.js/"))
-// fs.readFile("././index.js/", "", (error, data) => {
 
-//   error ? console.error(error) : console.log(data)
-//   const dataArr = data.split(",");
-
-//   console.log(dataArr);
-
-//   for(let i = 0; i < dataArr.length; i++){
-//     console.log(dataArr[i])
-//   }
-// })
 
 
 // var license = data.license;
@@ -21,21 +8,21 @@
 function renderLicenseBadge(data) {
 
   if (data.license == "Apache 2.0") {
-    return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
+    return "![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)";
   } else if (data.license == "BSD 3-Clause License") {
-    return "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)]";
+    return "![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)";
   } else if (data.license == "Attribution CC BY") {
-    return "[![licensebuttons by](https://licensebuttons.net/l/by/3.0/88x31.png)]";
+    return "![licensebuttons by](https://licensebuttons.net/l/by/3.0/88x31.png)";
   } else if (data.license == "Attribution-ShareAlike CC BY-SA") {
-    return "[![licensebuttons by-sa](https://licensebuttons.net/l/by-sa/3.0/88x31.png)]";
+    return "![licensebuttons by-sa](https://licensebuttons.net/l/by-sa/3.0/88x31.png)";
   } else if (data.license == "Attribution-NoDerivs CC BY-ND") {
-    return "[![licensebuttons by-nd](https://licensebuttons.net/l/by-nd/3.0/88x31.png)]";
+    return "![licensebuttons by-nd](https://licensebuttons.net/l/by-nd/3.0/88x31.png)";
   } else if (data.license == "Attribution-NonCommercial CC BY-NC") {
-    return "[![licensebuttons by-nc](https://licensebuttons.net/l/by-nc/3.0/88x31.png)]";
+    return "![licensebuttons by-nc](https://licensebuttons.net/l/by-nc/3.0/88x31.png)";
   } else if (data.license == "Attribution-NonCommercial-ShareAlike CC BY-NC-SA") {
-    return "[![licensebuttons by-nc-sa](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)]";
+    return "![licensebuttons by-nc-sa](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)";
   } else if (data.license == "The MIT License") {
-    return "[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)]";
+    return "![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)";
   } else if (data.license == "No License") {
     return "";
   } else {console.log("Uhhh. Something weird happened.... Restart the whole thing...") }
@@ -125,6 +112,30 @@ function renderLicenseSection(data) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   console.log(data)
+  
+
+  if (data.portfolio !== "" || data.portfolio !== undefined) {
+      data.portfolio = `- [Portfolio](${data.portfolio})`}
+
+  if (data.linkedIn !== "" || data.linkedIn !== undefined) {
+      data.linkedIn = `- [LinkedIn](${data.linkedIn})`}
+
+  if (data.gitlink !== "" || data.gitlink !== undefined) {
+      data.gitlink = `- [GitHub Link](${data.gitlink})`}
+
+  if (data.gitlink !== "" || data.gitlink !== undefined) {
+      data.gitlink = `- [GitHub Link](${data.gitlink})`}
+  
+  if (data.gitlink !== "" || data.gitlink !== undefined) {
+      data.gitlink = `- [GitHub Link](${data.gitlink})`}
+
+
+
+
+
+
+
+
   return `# ${data.title}
   ${renderLicenseBadge(data)}
 
@@ -154,5 +165,15 @@ function generateMarkdown(data) {
 
 `;
 }
+
+
+
+
+
+
+
+
+
+
 
 module.exports = generateMarkdown;

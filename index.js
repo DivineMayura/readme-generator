@@ -3,7 +3,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require("./utils/generateMarkdown");
 
-
+// license choices.
 var choices = ["Apache 2.0",
 "BSD 3-Clause License",
 "Attribution CC BY",
@@ -74,7 +74,7 @@ const questions = [
 
 
 
-
+// 
 function init() {
     
     inquirer
@@ -82,17 +82,9 @@ function init() {
         .then(data => {
             console.log(data)
             fs.writeFile(`${data.title}.md`, generateMarkdown(data), (err) => err ? console.error(err, "If this message is being played, it errored.") : console.log("Cool, it worked!"))
-        })
+        }) //this is kind of hellish, to be honest
         .catch(err => console.log(err))
 }
-
-
-
-
-
-
-
-
 
 
 // Function call to initialize app

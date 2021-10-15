@@ -1,10 +1,10 @@
 # readme-generator
   [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-  This application is a readme generator. After initializing, the user is issued a series of prompts from which they can enter the desired information to be displayed on the readme. In the future, I plan to implement more licenses, and more options so the user has more agency over the initial creation.
+  This application is a readme generator. After initializing, the user is issued a series of prompts from which they can enter the desired information to be displayed on the readme. In the future, I plan to implement more licenses, and more options so the user has more agency over the initial creation, and better image options. This readme was completely created using the generator, except for the video.
 
 
-* [Author & Contact](#author-&-contact)
+* [Author](#author)
 * [License](#license)
   
 * [Installation Instructions](#installation-instructions)
@@ -12,6 +12,13 @@
 ## Installation Instructions
       
 To install, follow these instructions:
+
+If it's unavailable here, you can find it within the video folder located in this repo.
+
+There is background static in the video when I talk. I'm still conprehensible, and it's not too loud, but it may be bothersome for some.
+
+![Watch the video](./video/install.mp4)
+
 
 ## Author 
   GitHub username: DivineMayura

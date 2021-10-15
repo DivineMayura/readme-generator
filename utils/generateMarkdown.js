@@ -141,7 +141,7 @@ ${data.tests}\n`}
       
 ## Installation Instructions
       
-${data.install}\n`}
+${data.install}\n`} // haha, this link at the top is completely un-necessary, I only include it because it adds a 3rd option to the already short list.
   
   if (data.usage !== "" ) {
     data.usge = `

@@ -37,6 +37,10 @@ const questions = [
         name: "description"
     },
     {
+        message: "Would You like to include Installation Instructions? \n If, so: Type Them. \n Otherwise, keep it empty.",
+        name: "install"
+    },
+    {
         message: "Would you like to include installation instructions? \n If, so: Type them in. \n Otherwise, keep it empty.",
         name: "description"        
     },

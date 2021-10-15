@@ -123,11 +123,13 @@ function generateMarkdown(data) {
   if (data.gitlink !== "" || data.gitlink !== undefined) {
       data.gitlink = `- [GitHub Link](${data.gitlink})`}
 
-  if (data.gitlink !== "" || data.gitlink !== undefined) {
-      data.gitlink = `- [GitHub Link](${data.gitlink})`}
+  if (data.install !== "" || data.install !== undefined) {
+      data.install = `## Installation Instructions
+      
+  (${data.install})`}
   
-  if (data.gitlink !== "" || data.gitlink !== undefined) {
-      data.gitlink = `- [GitHub Link](${data.gitlink})`}
+  if (data.usage !== "" || data.usage !== undefined) {
+      data.usge = `- [GitHub Link](${data.usage})`}
 
 
 
@@ -137,7 +139,7 @@ function generateMarkdown(data) {
 
 
   return `# ${data.title}
-  ${renderLicenseBadge(data)}
+  [${renderLicenseBadge(data)}]${renderLicenseLink(data)}
 
   ${data.description}
 
@@ -145,23 +147,20 @@ function generateMarkdown(data) {
 * [Author & Contact](#Author)
 * [License](#License)
 
-## Built With
-  ${data.builtDifferent}
-
 
 ## Author 
   ${data.gitHubUserName}
+  \n
   ${data.ownerName}
-
+\n
   ${data.gitlink}
   ${data.portfolio}
   ${data.linkedIn}
 
 
 ## License
-  ${renderLicenseBadge(data)}
-  ${renderLicenseLink(data)}
-  ${renderLicenseSection(data)}
+  [${renderLicenseBadge(data)}]${renderLicenseLink(data)}
+  \n${renderLicenseSection(data)}
 
 `;
 }

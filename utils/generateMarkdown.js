@@ -1,9 +1,6 @@
 
 
-
-// var license = data.license;
-
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Creates a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(data) {
 
@@ -29,7 +26,7 @@ function renderLicenseBadge(data) {
 
 }
 
-// TODO: Create a function that returns the license link
+// Creates a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(data) {
 
@@ -55,8 +52,9 @@ function renderLicenseLink(data) {
 
 }
 
-// TODO: Create a function that returns the license section of README
+// Creates a function that returns the license section of README
 // If there is no license, return an empty string
+// All of this code is really noisy, I was considering just only using links, but it would be less cool.
 function renderLicenseSection(data) {
 
   if (data.license == "Apache 2.0") {
@@ -109,14 +107,15 @@ function renderLicenseSection(data) {
 
 }
 
-// TODO: Create a function to generate markdown for README
+// Creates a function to generate markdown for README
+// and dynamically creates content.
 function generateMarkdown(data) {
   console.log(data)
   
 
   if (data.portfolio !== "" ) {
     data.portfolio = `- [Portfolio](${data.portfolio})`}
-// lmao this is kinda janky
+// lmao this is all a little janky, but it totally works!
   if (data.linkedIn !== "" ) {
     data.linkedIn = `- [LinkedIn](${data.linkedIn})`}
 
@@ -141,7 +140,7 @@ ${data.tests}\n`}
       
 ## Installation Instructions
       
-${data.install}\n`} // haha, this link at the top is completely un-necessary, I only include it because it adds a 3rd option to the already short list.
+${data.install}\n`} // haha, this link at the top is completely un-necessary, I only include it because it adds a 3rd option to the nav list, so it's not too short..
   
   if (data.usage !== "" ) {
     data.usge = `

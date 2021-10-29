@@ -14,7 +14,7 @@ var choices = ["Apache 2.0",
     "The MIT License",
     "No License"];
 
-// TODO: Create an array of questions for user input
+// Creates an array of questions for user input
 const questions = [
     {
         message: "What is your GitHub username?\n     ",
